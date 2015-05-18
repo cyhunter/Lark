@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin xmlns:e="http://ns.egret-labs.org/egret" xmlns:w="http://ns.egret-labs.org/wing">
+	<e:Label text="Todos" fontSize="100" textColor="0x30CEC6" textAlign="left" left="50" fontFamily="Calibri" right="50"/>
+	<e:Rect height="52" y="125" left="15" right="15" fillColor="0xBFBFBF"/>
+	<e:TextInput id="txTodo" y="125" height="52" left="15" right="15"/>
+	<e:Group id="groupItems" left="15" right="15" top="182" bottom="0">
+	</e:Group>
+	<e:Label text="lark" right="5" bottom="5" bold="true" fontFamily="Calibri" textColor="0x393939"/>
+</e:Skin>

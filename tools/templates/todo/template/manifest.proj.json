@@ -1,0 +1,9 @@
+{
+   "files": [
+      "SkinLoader.js",
+      "libs/Rect.js",
+      "libs/TextInput.js",
+      "Main.js",
+      "Todo.js"
+   ]
+}

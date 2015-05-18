@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="450" height="60" xmlns:e="http://ns.egret-labs.org/egret">
+	<e:states>
+		<e:State name="normal"/>
+		<e:State name="done"/>
+	</e:states>
+	<e:Rect left="0" right="0" top="0" bottom="1" fillColor="0x2C2C2C"/>
+	<e:Label id="labelDisplay" text="Todo Item" left="60" right="60" top="10" bottom="10" textColor="0xFFFFFF" textColor.done="0x8D8D8D"/>
+	<e:Image id="iconCheck" height="32" width="32" left="15" verticalCenter="0" source="images/uncheck-icon.png" source.done="images/check-icon.png"/>
+	<e:Image id="iconDelete" width="32" height="32" y="10" verticalCenter="0" right="15" source="images/delete-icon.png"/>
+</e:Skin>
