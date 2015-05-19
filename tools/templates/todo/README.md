@@ -1,10 +1,71 @@
 
-下面以两个简单例子来展示 Lark 的用法。
+#Lark 入门 
 
-#安装Lark
+##安装Lark
 
 Lark 提供了一组命令行工具来加速应用的开发，安装方法请参考：https://github.com/egret-labs/Lark
 
+你也可以直接下载 Lark 类库
+
+
+在下载的文件夹中新建一个 index.html, 并将下面的代码粘贴到其中
+
+```html
+	<!DOCTYPE HTML>
+	<html>
+	    <head>
+	        <title>Getting Started</title>
+	    </head>
+	    <body>
+			<div class="lark-player" data-entry-class="Main" style="height:400px"></div>
+	        <script id="ui" type="text/xml">
+	            <e:Group xmlns:e="http://ns.egret-labs.org/egret">
+	            	<e:Image source="images/lark.png"/>
+	            	<e:Label text="Lark" fontSize="128" fontFamily="Helvetica, Arial" left="150"/>
+	            </e:Group>
+	        </script>
+	        <script>
+		        var ui = document.getElementById('ui').textContent;
+		        lark.gui.EXML.parse(ui, "Main");
+	        </script>
+	    </body>
+	</html>
+```
+
+首先我们引入了 Lark 和 Lark GUI 框架。Lark GUI 可以使用 EXML 和丰富的内置组件来构建UI界面。
+
+```html
+    <script src="libs/lark.js"></script>
+    <script src="libs/lark.gui.js"></script>
+```
+
+Lark 会自动识别 `class="lark-player"` 的HTML元素，并将它作为一个Lark player的容器。
+` data-entry-class="Main"` 标示了程序执行的入口。当网页加载完成时，Lark 会初始化所有的player，
+实例化入口类，将它作为舞台的默认显示对象。
+
+```html
+	<div class="lark-player" data-entry-class="Main" style="height:400px"></div>
+```
+
+这个例子中我们使用EXML来组织UI界面，并在运行时解析EXML显示UI界面。
+
+由于解析时 Lark 只需要EXML的文本，所以开发者可以使用任何自己喜欢的形式加载EXML。
+这个示例中我们将EXML放置在一个 `<script id="ui" type="text/xml">` Script标签中。
+
+
+```xml
+    <e:Group xmlns:e="http://ns.egret-labs.org/egret">
+    	<e:Image source="images/lark.png"/>
+    	<e:Label text="Lark" fontSize="128" fontFamily="Helvetica, Arial" left="150"/>
+    </e:Group>
+```
+
+`Group`
+
+
+```html
+	
+```
 
 #Hello World
 
@@ -159,6 +220,7 @@ Todo示例的项目结构为
 ##TodoItemSkin.exml
 
 打开 src\skins\TodoItemSkin.exml
+
 ```xml
 	<e:Skin width="450" height="60" xmlns:e="http://ns.egret-labs.org/egret">
 		<e:states>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Getting Started</title>
+        <script type="text/javascript" src="libs/core.js"></script>
+        <script type="text/javascript" src="libs/gui.js"></script>
+    </head>
+    <body>
+		<div id="player" class="lark-player" data-entry-class="Main" style="height:400px"></div>
+        <script id="ui" type="text/xml">
+            <e:Group xmlns:e="http://ns.egret-labs.org/egret">
+            	<e:Image source="images/lark.png"/>
+            	<e:Label text="Lark" fontSize="128" fontFamily="Helvetica, Arial" left="150"/>
+            </e:Group>
+        </script>
+        <script>
+	        var ui = document.getElementById('ui').textContent;
+	        lark.gui.EXML.parse(ui, "Main");
+        </script>
+    </body>
+</html>

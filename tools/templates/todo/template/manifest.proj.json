@@ -4,6 +4,8 @@
       "libs/Rect.js",
       "libs/TextInput.js",
       "Main.js",
-      "Todo.js"
+      "Start.js",
+      "Todo.js",
+      "TodoItem.js"
    ]
 }

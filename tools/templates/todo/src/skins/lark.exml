@@ -1,0 +1,4 @@
+<e:Group left="0" right="0" top="0" bottom="0" xmlns:e="http://ns.egret-labs.org/egret">
+	<e:Image source="images/lark.png" width="64" height="64" verticalCenter="0" horizontalCenter="-64"/>
+	<e:Label text="Lark" fontSize="64" textColor="0x30CEC6" verticalCenter="0" horizontalCenter="64"/>
+</e:Group>
